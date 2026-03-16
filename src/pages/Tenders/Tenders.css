@@ -1,0 +1,9 @@
+.tenders-page {
+  padding: 6rem 8rem;
+}
+
+@media (max-width: 900px) {
+  .tenders-page {
+    padding: 3rem 2rem 4rem;
+  }
+}

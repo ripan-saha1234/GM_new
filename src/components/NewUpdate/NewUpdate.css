@@ -1,0 +1,76 @@
+/* NewUpdate bar – base lives in Header.css; responsive overrides here */
+
+@media (max-width: 992px) {
+  .new-update {
+    height: 52px;
+  }
+
+  .update-title {
+    width: 180px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .update-marquee {
+    padding-left: 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-update {
+    height: 48px;
+    flex-wrap: nowrap;
+  }
+
+  .update-title {
+    width: 140px;
+    min-width: 100px;
+    font-size: 16px;
+    line-height: 24px;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+  }
+
+  .update-marquee {
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    min-width: 0;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  .new-update {
+    height: 44px;
+  }
+
+  .update-title {
+    width: 100px;
+    min-width: 80px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .update-marquee {
+    padding-left: 8px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .new-update {
+    height: 42px;
+  }
+
+  .update-title {
+    width: 72px;
+    min-width: 64px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .update-marquee {
+    padding-left: 6px;
+    font-size: 12px;
+  }
+}

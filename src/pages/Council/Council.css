@@ -1,0 +1,10 @@
+/* Same padding as About page */
+.council-page {
+  padding: 6rem 7rem;
+}
+
+@media (max-width: 900px) {
+  .council-page {
+    padding: 3rem 2rem 4rem;
+  }
+}

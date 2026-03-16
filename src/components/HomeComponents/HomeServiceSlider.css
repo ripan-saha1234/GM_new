@@ -1,0 +1,159 @@
+.home-services-section {
+  margin-top: 48px;
+  padding: 0 0 32px;
+}
+
+.home-services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.home-services-heading {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #02019C;
+  line-height: 54px;
+}
+
+.home-services-view-all {
+  background:#116600;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.home-services-view-all:hover {
+  background-color: #1d7a1d;
+}
+
+.home-services-slider {
+  overflow: hidden;
+}
+
+.home-services-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+border: none;
+  padding: 16px;
+  /* box-shadow: 0 4px 12px rgba(203, 203, 203, 0.47); */
+}
+
+.home-services-slider .service-card {
+  width: 100%;
+  max-width: 232px;
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .home-services-section {
+    margin-top: 36px;
+    padding: 0 0 24px;
+  }
+
+  .home-services-header {
+    margin-bottom: 20px;
+  }
+
+  .home-services-heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .home-services-view-all {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .home-services-slider .swiper-slide {
+    padding: 12px;
+  }
+
+  .home-services-slider .service-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-services-section {
+    margin-top: 28px;
+    padding: 0 16px 20px;
+  }
+
+  .home-services-header {
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .home-services-heading {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .home-services-view-all {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .home-services-slider .swiper-slide {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-services-section {
+    margin-top: 24px;
+    padding: 0 12px 16px;
+  }
+
+  .home-services-header {
+    margin-bottom: 14px;
+    gap: 8px;
+  }
+
+  .home-services-heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .home-services-view-all {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .home-services-slider .swiper-slide {
+    padding: 8px;
+  }
+
+  .home-services-slider .service-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-services-section {
+    padding: 0 10px 16px;
+  }
+
+  .home-services-heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .home-services-view-all {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+}

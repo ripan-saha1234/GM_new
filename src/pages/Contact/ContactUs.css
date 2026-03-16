@@ -1,0 +1,269 @@
+.contact-section {
+    display: flex;
+    gap: 20px;
+    padding: 6rem;
+    /* padding: 0; */
+    /* padding: 60px 8%; */
+  }
+  
+  /* LEFT */
+  .contact-left {
+    width: 100%;
+  }
+  
+  .contact-left-heading {
+    color: #02019C;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    margin: 0 0 20px 0;
+  }
+  
+  .contact-left-desc {
+    color: rgba(20, 20, 20, 0.8);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 32px 0;
+    max-width: 90%;
+    font-weight: 400;
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    height: 112px;
+    width: 465px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(203, 203, 203, 0.47);
+    border: 1px solid #CBCBCB78;
+  }
+  
+  .contact-card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact-card-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .contact-card-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .contact-card-content {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .contact-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #141414;
+    margin: 0 0 8px 0;
+  }
+  
+  .contact-card-detail {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(20, 20, 20, 0.8);
+    line-height: 24px;
+    margin: 0;
+  }
+  
+  /* RIGHT */
+  .contact-right {
+    /* width: 626px; */
+    width: 100%;
+  }
+  
+  .contact-right h2 {
+    color: #02019C;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+  }
+  
+  /* FORM */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .two-col {
+    display: flex;
+    gap: 24px;
+  }
+  
+  /* INPUT */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #141414;
+    line-height: 24px;
+    font-weight: 400;
+    padding-left: 14px;
+  }
+  
+  .required {
+    color: #EB5757;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #D9D9D9;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #141414;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #02019C;
+  }
+  
+  /* BUTTON */
+  .submit-btn {
+    width: 72px;
+    height: 44px;
+    padding: 12px;
+    background: #116600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .map-container {
+    width: 100%;
+      height: 513px;
+    margin-top: 0;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .contact-section {
+      padding: 4rem 3rem;
+      gap: 24px;
+    }
+
+    .contact-left-heading,
+    .contact-right h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    .contact-card {
+      width: 100%;
+      max-width: 460px;
+    }
+
+    .map-container {
+      height: 420px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      padding: 3rem 1.5rem;
+      gap: 28px;
+    }
+
+    .achievements-header {
+      margin-bottom: 20px;
+    }
+
+    .contact-left-heading,
+    .contact-right h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    .contact-left-desc {
+      max-width: 100%;
+    }
+
+    .contact-card {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .two-col {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .map-container {
+      height: 360px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .contact-section {
+      padding: 2.5rem 1rem;
+      gap: 24px;
+    }
+
+    .contact-left-heading,
+    .contact-right h2 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    .contact-card {
+      padding: 16px;
+      gap: 14px;
+    }
+
+    .contact-card-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .contact-card-title {
+      font-size: 15px;
+    }
+
+    .contact-card-detail {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .submit-btn {
+      width: 100%;
+    }
+
+    .map-container {
+      height: 300px;
+    }
+  }

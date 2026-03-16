@@ -1,0 +1,9 @@
+.projects-page {
+  padding: 6rem;
+}
+
+@media (max-width: 900px) {
+  .projects-page {
+    padding: 3rem 2rem 4rem;
+  }
+}

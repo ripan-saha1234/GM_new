@@ -1,0 +1,6 @@
+.main-layout{
+    flex: 1;
+    /* padding: 6rem; */
+    width: 100%;
+    box-sizing: border-box;
+}

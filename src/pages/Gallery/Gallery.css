@@ -1,0 +1,13 @@
+.gallery-page {
+  padding: 4rem 6rem;
+}
+
+/* .gallery-content {
+  max-width: 100%;
+} */
+
+@media (max-width: 900px) {
+  .gallery-page {
+    padding: 0 2rem 3rem;
+  }
+}
