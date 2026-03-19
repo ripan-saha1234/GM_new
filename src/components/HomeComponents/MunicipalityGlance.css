@@ -1,0 +1,57 @@
+.glance-section {
+  padding: 40px 0 16px;
+  text-align: center;
+}
+
+.glance-title {
+  margin: 0 0 30px 0;
+  font-size: 48px;
+  font-weight: 700;
+  
+  color: #02019C;
+}
+
+.glance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.glance-card {
+  background: #e5edf8;
+  border-radius: 16px;
+  padding: 34px 10px;
+  transform: translateY(0);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 0 0 rgba(15, 23, 42, 0.0);
+}
+
+.glance-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.16);
+}
+
+.glance-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+
+.glance-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+@media (max-width: 992px) {
+  .glance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .glance-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

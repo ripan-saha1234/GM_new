@@ -279,13 +279,4 @@
   }
 }
 
-.tender-notice-wrapper {
-  display: flex;
-  gap: 36px;
-  padding: 40px 0px;
-}
-@media (max-width: 768px) {
-  .tender-notice-wrapper {
-    flex-direction: column;
-  }
-}
+/* tender/notice section replaced by WhatsNewNotices */

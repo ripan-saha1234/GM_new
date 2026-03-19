@@ -2,7 +2,8 @@ import React from 'react'
 import './HomePage.css'
 import HomeServiceSlider from '../../components/HomeComponents/HomeServiceSlider'
 import ExploreSlider from '../../components/HomeComponents/ExploreSlider'
-import CommonListCard from '../../components/HomeComponents/CommonListCard'
+import WhatsNewNotices from '../../components/HomeComponents/WhatsNewNotices'
+import MunicipalityGlance from '../../components/HomeComponents/MunicipalityGlance'
 import Publications from '../../components/HomeComponents/Publications'
 import Achievements from '../../components/HomeComponents/Achievements'
 import Tourist from '../../components/HomeComponents/Tourist'
@@ -83,6 +84,7 @@ const HomePage = () => {
             </div>
             <button className="home-welcome__btn">Read More</button>
         </section>
+        <WhatsNewNotices />
 
         <section className="chairperson-section">
       <div className="chairperson-wrapper">
@@ -112,24 +114,11 @@ const HomePage = () => {
       </div>
     </section>
 
+        <MunicipalityGlance />
+
         <HomeServiceSlider services={HOME_SERVICES} />
 
         <ExploreSlider events={HOME_EVENTS} />
-        <div className="tender-notice-wrapper">
-
-      <CommonListCard 
-        title="Tender & Quotation"
-        items={tenderData}
-        type="tender"
-      />
-
-      <CommonListCard 
-        title="Notice"
-        items={noticeData}
-        type="notice"
-      />
-
-    </div>
     <Publications
       title="Publications & Updates"
       buttonText="View all"

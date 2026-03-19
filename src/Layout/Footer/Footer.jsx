@@ -6,42 +6,68 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
+        <div className="footer-column footer-brand">
+          <div className="footer-logo">
+            <img src="/footer_logo_new.png" alt="Gobardanga Municipality logo" />
+            <div className="footer-logo-text">
+              <div className="footer-logo-title">Gobardanga Municipality</div>
+              <div className="footer-logo-subtitle">Estb. 1870</div>
+            </div>
+          </div>
+          <p className="footer-brand-text">
+            Serving citizens of North 24 Parganas with dedication and transparency.
+          </p>
+        </div>
+
         <div className="footer-column">
           <h3 className="footer-heading">Useful Links</h3>
           <ul className="footer-links">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About us</Link></li>
-            <li><Link to="/departments">Departments</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/services">Services</Link></li>
             <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/download">Download</Link></li>
-            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/finance">Finance</Link></li>
+            <li><Link to="/councillors">Councillors</Link></li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
-            <li><a href="#">Sed do eiusmod tempor incididunt</a></li>
-            <li><a href="#">Sed do eiusmod tempor incididunt</a></li>
-            <li><a href="#">Sed do eiusmod tempor incididunt</a></li>
-            <li><a href="#">Sed do eiusmod tempor incididunt</a></li>
+            <li><Link to="/grievance">Submit Grievance</Link></li>
+            <li><Link to="/feedback">Feedback</Link></li>
+            <li><Link to="/newsletter">e‑Newsletter</Link></li>
+            <li><Link to="/notice-board">Notice Board</Link></li>
+            <li><Link to="/tourism">Tourist Attractions</Link></li>
+            <li><Link to="/service-rates">Service Rates</Link></li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h3 className="footer-heading">Contact</h3>
           <div className="footer-contact">
-            <p className="footer-address">
-              No. 12/4, Green Park Lane, Gobordanga, North 24 Parganas, Pin-743248,
+            <p className="footer-contact-row">
+              <span className="footer-contact-icon">📍</span>
+              <span>
+                Municipality Office, Main Road,
+                <br />
+                Gobardanga, North 24 Parganas
+              </span>
             </p>
-            <p><a href="tel:+918764983648">+91 8764983648</a></p>
-            <p><a href="mailto:contact@gobordanga.com">contact@gobordanga.com</a></p>
+            <p className="footer-contact-row">
+              <span className="footer-contact-icon">📞</span>
+              <a href="tel:+919999999999">+91 XXXXX-XXXXX</a>
+            </p>
+            <p className="footer-contact-row">
+              <span className="footer-contact-icon">✉️</span>
+              <a href="mailto:info@gobardangamunicipality.in">info@gobardangamunicipality.in</a>
+            </p>
           </div>
         </div>
       </div>
 
       <div className="footer-copyright">
-        © Copyright 2024, All Rights Reserved
+        © 2026 Gobardanga Municipality. All Rights Reserved.
       </div>
     </footer>
   )
