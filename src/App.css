@@ -32,3 +32,13 @@ ul li {
   margin-left: 0px;
   margin-right: 0px;
 }
+.uni_container{
+  width: 85%;
+  min-width: 85%;
+  max-width: 85%;
+  margin-inline: auto;
+}
+
+body{
+  background-color: #f9fafb;
+}

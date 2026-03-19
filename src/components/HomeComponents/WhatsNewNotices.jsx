@@ -1,107 +1,106 @@
-import React from 'react'
-import './WhatsNewNotices.css'
+import React from "react";
+import "./WhatsNewNotices.css";
+import { Link } from "react-router-dom";
 
-const notices = [
-  {
-    id: 1,
-    title: 'Water supply disruption on March 15–16',
-    date: '2026-03-10',
-    tag: 'General',
-    tagVariant: 'general',
-  },
-  {
-    id: 2,
-    title: 'Property tax payment deadline extended',
-    date: '2026-03-08',
-    tag: 'General',
-    tagVariant: 'general',
-  },
-  {
-    id: 3,
-    title: 'New waste management guidelines',
-    date: '2026-03-05',
-    tag: 'Awareness',
-    tagVariant: 'awareness',
-  },
-  {
-    id: 4,
-    title: 'Recruitment for Junior Engineer posts',
-    date: '2026-03-03',
-    tag: 'Employment',
-    tagVariant: 'employment',
-  },
-  {
-    id: 5,
-    title: 'e‑Tender for road construction Phase II',
-    date: '2026-03-01',
-    tag: 'Tender',
-    tagVariant: 'tender',
-  },
-]
+const WhatsNewNotices = () => {
+  const notices = [
+    {
+      title: "Property tax payment deadline extended",
+      date: "March 15, 2026",
+    },
+    {
+      title: "Tender for road construction in Ward 8",
+      date: "March 12, 2026",
+    },
+    {
+      title: "Recruitment for junior clerk positions",
+      date: "March 10, 2026",
+    },
+    {
+      title: "Public hearing on water supply project",
+      date: "March 8, 2026",
+    },
+    {
+      title: "New sanitation drive in all 16 wards",
+      date: "March 5, 2026",
+    },
+  ];
 
-const quickLinks = [
-  'Citizen’s Charter',
-  'Service Rates',
-  'Feedback',
-  'Grievance',
-]
+  const quickLinks = [
+    "Citizen's Charter",
+    "Complaint Timeline",
+    "Service Rates",
+    "Projects",
+    "Notice Board",
+    "Contact",
+  ];
 
-const WhatsNewNotices = () => (
-  <section className="whatsnew-section">
-    <div className="whatsnew-layout">
-      <div className="whatsnew-left">
-        <div className="whatsnew-header">
-          <h2 className="whatsnew-title">What&apos;s New / Notices</h2>
-          <button className="whatsnew-viewall" type="button">
-            View All →
-          </button>
-        </div>
+  return (
+    <section className="wnxq81_notice_page_shell">
+      <div className="wnxq81_notice_inner_wrap">
+        <div className="wnxq81_notice_main_grid">
+          <div className="wnxq81_notice_left_panel">
+            <div className="wnxq81_notice_header_row">
+              <h2 className="wnxq81_notice_section_title">What's New / Notices</h2>
+              <Link to="/notice-board" className="wnxq81_notice_view_all_link">
+                View All
+              </Link>
+            </div>
 
-        <div className="whatsnew-list">
-          {notices.map((item) => (
-            <article key={item.id} className="whatsnew-card">
-              <div className="whatsnew-card-icon">
-                <img src="/notice-icon.svg" alt="" aria-hidden="true" />
-              </div>
-              <div className="whatsnew-card-main">
-                <h3 className="whatsnew-card-title">{item.title}</h3>
-                <div className="whatsnew-card-meta">
-                  <span className="whatsnew-card-date">{item.date}</span>
-                  <span className={`whatsnew-card-tag whatsnew-card-tag--${item.tagVariant}`}>
-                    {item.tag}
-                  </span>
+            <div className="wnxq81_notice_list_wrap">
+              {notices.map((item, index) => (
+                <div className="wnxq81_notice_item_row" key={index}>
+                  <div className="wnxq81_notice_item_left">
+                    <div className="wnxq81_notice_doc_icon">
+                      <i className="fa-regular fa-file-lines"></i>
+                    </div>
+
+                    <div className="wnxq81_notice_text_group">
+                      <h3 className="wnxq81_notice_item_title">{item.title}</h3>
+                      <p className="wnxq81_notice_item_date">{item.date}</p>
+                    </div>
+                  </div>
+
+                  <div className="wnxq81_notice_arrow_icon">
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="wnxq81_notice_right_panel">
+            <div className="wnxq81_newsletter_card_box">
+              <div className="wnxq81_newsletter_heading_row">
+                <i className="fa-regular fa-newspaper"></i>
+                <h3 className="wnxq81_newsletter_title">e-Newsletter</h3>
               </div>
-            </article>
-          ))}
-        </div>
-      </div>
 
-      <div className="whatsnew-right">
-        <div className="whatsnew-newsletter">
-          <h3 className="whatsnew-newsletter-title">e‑Newsletter</h3>
-          <p className="whatsnew-newsletter-text">
-            Stay updated with our periodic newsletters
-          </p>
-          <button className="whatsnew-newsletter-btn" type="button">
-            View Newsletters
-          </button>
-        </div>
+              <p className="wnxq81_newsletter_text">
+                Subscribe to get latest municipal updates
+              </p>
 
-        <div className="whatsnew-quicklinks">
-          <h3 className="whatsnew-quicklinks-title">Quick Links</h3>
-          <div className="whatsnew-quicklinks-grid">
-            {quickLinks.map((label) => (
-              <button key={label} className="whatsnew-quicklink-btn" type="button">
-                {label}
+              <button className="wnxq81_newsletter_btn">
+                Subscribe Now
               </button>
-            ))}
+            </div>
+
+            <div className="wnxq81_quick_links_box">
+              <h3 className="wnxq81_quick_links_title">Quick Links</h3>
+
+              <div className="wnxq81_quick_links_grid">
+                {quickLinks.map((link, index) => (
+                  <a href="#!" className="wnxq81_quick_link_item" key={index}>
+                    {link}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  );
+};
 
-export default WhatsNewNotices
-
+export default WhatsNewNotices;

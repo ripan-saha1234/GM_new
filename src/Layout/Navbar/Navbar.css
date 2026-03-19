@@ -43,9 +43,9 @@
 
 .nav-links a {
   position: relative;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  color: #111827;
+  color: #626262;
   text-decoration: none;
   padding: 6px 0;
   transition: color 0.2s ease;
@@ -58,7 +58,7 @@
   bottom: -6px;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #2563eb, #ec4899);
+  background: linear-gradient(90deg, #2563eb);
   border-radius: 999px;
   transform: scaleX(0);
   transform-origin: center;
@@ -81,7 +81,7 @@
 .nav-dropdown-trigger {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: none;
   border: none;
   cursor: pointer;
@@ -89,10 +89,12 @@
   font: inherit;
   color: inherit;
   text-decoration: none;
-  color: #141414;
+  color: #626262;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   transition: color 0.5s;
+  margin-top: 2px;
+  width: fit-content;
 }
 
 .nav-dropdown-trigger:hover {
@@ -138,7 +140,7 @@
 .nav-dropdown a {
   display: block;
   padding: 10px 16px;
-  color: #141414;
+  color: #626262;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;

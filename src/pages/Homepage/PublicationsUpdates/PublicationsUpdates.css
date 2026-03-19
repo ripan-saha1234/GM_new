@@ -1,0 +1,236 @@
+.pubux91_section_shell {
+  width: 100%;
+  padding: 56px 0 58px;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.pubux91_inner_wrap {
+  margin: 0 auto;
+  padding: 0 0px !important;
+  box-sizing: border-box;
+}
+
+.pubux91_header_row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.pubux91_heading_block {
+  max-width: 760px;
+}
+
+.pubux91_heading_kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #3568b2;
+}
+
+.pubux91_main_title {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.pubux91_main_subtitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5f6f8f;
+}
+
+.pubux91_view_all_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #3568b2;
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+  white-space: nowrap;
+}
+
+.pubux91_view_all_btn:hover {
+  background-color: #2d5a9a;
+}
+
+.pubux91_swiper_main {
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.pubux91_card_item {
+  border: 1px solid #d9dee7;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  padding: 22px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  height: 100%;
+  min-height: 320px;
+}
+
+.pubux91_card_item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+}
+
+.pubux91_card_top_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.pubux91_type_badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.pubux91_type_badge_publication {
+  background-color: #e8f0fd;
+  color: #2f62ac;
+}
+
+.pubux91_type_badge_update {
+  background-color: #eaf7ef;
+  color: #2f8a57;
+}
+
+.pubux91_icon_box {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background-color: #eef3fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3568b2;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.pubux91_card_title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.pubux91_card_desc {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #5f6f8f;
+  min-height: 102px;
+}
+
+.pubux91_card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e5ebf4;
+}
+
+.pubux91_date_row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.pubux91_read_more_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #3568b2;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .pubux91_section_shell {
+    padding: 38px 0 42px;
+  }
+
+  .pubux91_inner_wrap {
+    padding: 0 18px;
+  }
+
+  .pubux91_header_row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .pubux91_main_title {
+    font-size: 28px;
+  }
+
+  .pubux91_main_subtitle {
+    font-size: 15px;
+  }
+
+  .pubux91_card_item {
+    padding: 18px;
+    border-radius: 18px;
+    min-height: auto;
+  }
+
+  .pubux91_card_title {
+    font-size: 18px;
+  }
+
+  .pubux91_card_desc {
+    min-height: auto;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pubux91_main_title {
+    font-size: 24px;
+  }
+
+  .pubux91_view_all_btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pubux91_card_footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

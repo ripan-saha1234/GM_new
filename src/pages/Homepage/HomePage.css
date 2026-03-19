@@ -1,5 +1,5 @@
 .home-page-container {
-  padding: 6rem 4rem;
+  padding: 6rem 0rem;
 }
 .home-welcome {
   display: flex;
@@ -10,7 +10,7 @@
 }
 
 .home-welcome__heading {
-  color: #02019C;
+  color: #3061a6;
   font-size: 48px;
   font-weight: 700;
   /* margin: 0 0 1.5rem 0; */
@@ -34,7 +34,7 @@
 }
 
 .home-welcome__btn {
-  background-color: #116600;
+  background-color: #3061a6;
   color: white;
   border: none;
   padding: 12px;
@@ -46,9 +46,6 @@
   transition: background-color 0.2s ease;
 }
 
-.home-welcome__btn:hover {
-  background-color: #1d7a1d;
-}
 
 /* Home welcome – responsive */
 @media (max-width: 992px) {
@@ -142,7 +139,7 @@
 }
 
 .read-more-btn {
-  background: #116600;
+  background: #2f62ac;
   color: #FFFFFF;
   border: none;
   padding: 12px;

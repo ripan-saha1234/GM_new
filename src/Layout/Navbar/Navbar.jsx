@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar" ref={navRef}>
-      <div className="nav-container">
+      <div className="nav-container uni_container">
         <div className="logo">
           <img src="/logo.svg" alt="Gobardanga Municipality logo" />
           <div className="logo-text">
@@ -75,11 +75,43 @@ const Navbar = () => {
             <Link to="/" onClick={closeMenu}>Home</Link>
           </li>
 
-          <li>
-            <Link to="/about" onClick={closeMenu}>About Us</Link>
+          <li className={`nav-item-dropdown ${openDropdown === 'aboutus' ? 'open' : ''}`}>
+            <button
+              type="button"
+              className="nav-dropdown-trigger"
+              onClick={() => toggleDropdown('aboutus')}
+              aria-expanded={openDropdown === 'aboutus'}
+              aria-haspopup="true"
+            >
+              About us
+              {/* <ChevronIcon /> */}
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div className="nav-dropdown">
+              <Link to="/councillors" onClick={closeMenu}>Counicllors</Link>
+              {/* <Link to="/notice-board/tenders" onClick={closeMenu}>Other key Person</Link> */}
+              <Link to="/about" onClick={closeMenu}>About us</Link>
+            </div>
           </li>
 
-          <li className={`nav-item-dropdown ${openDropdown === 'notice' ? 'open' : ''}`}>
+          <li className={`nav-item-dropdown ${openDropdown === 'departments' ? 'open' : ''}`}>
+            <button
+              type="button"
+              className="nav-dropdown-trigger"
+              onClick={() => toggleDropdown('departments')}
+              aria-expanded={openDropdown === 'departments'}
+              aria-haspopup="true"
+            >
+              Departments
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div className="nav-dropdown">
+              <Link to="/departments/finance" onClick={closeMenu}>Finance</Link>
+
+            </div>
+          </li>
+
+          {/* <li className={`nav-item-dropdown ${openDropdown === 'notice' ? 'open' : ''}`}>
             <button
               type="button"
               className="nav-dropdown-trigger"
@@ -88,13 +120,17 @@ const Navbar = () => {
               aria-haspopup="true"
             >
               Notice Board
-              <ChevronIcon />
+              <i class="fa-solid fa-angle-down"></i>
             </button>
             <div className="nav-dropdown">
               <Link to="/notice-board" onClick={closeMenu}>All Notices</Link>
               <Link to="/notice-board/tenders" onClick={closeMenu}>Tenders</Link>
               <Link to="/notice-board/announcements" onClick={closeMenu}>Announcements</Link>
             </div>
+          </li> */}
+
+          <li>
+            <Link to="/notice-board" onClick={closeMenu}>Notice Board</Link>
           </li>
 
           <li>
@@ -104,19 +140,12 @@ const Navbar = () => {
           <li>
             <Link to="/projects" onClick={closeMenu}>Projects</Link>
           </li>
-
           <li>
-            <Link to="/finance" onClick={closeMenu}>Finance</Link>
+            <Link to="/gallery" onClick={closeMenu}>Gallery</Link>
           </li>
-
-          <li>
-            <Link to="/councillors" onClick={closeMenu}>Councillors</Link>
-          </li>
-
           <li>
             <Link to="/tourism" onClick={closeMenu}>Tourism</Link>
           </li>
-
           <li>
             <Link to="/contact" onClick={closeMenu}>Contact</Link>
           </li>

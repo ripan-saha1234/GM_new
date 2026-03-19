@@ -1,0 +1,146 @@
+.aevntx19_page_shell {
+  width: 100%;
+  /* background-color: #ffffff; */
+  padding: 46px 0 54px;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.aevntx19_inner_wrap {
+  /* max-width: 1480px; */
+  margin: 0 auto;
+  padding: 0 0px !important;
+  box-sizing: border-box;
+}
+
+.aevntx19_heading_block {
+  margin-bottom: 30px;
+}
+
+.aevntx19_page_title {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.aevntx19_page_subtitle {
+  margin: 0;
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5f6f8f;
+}
+
+.aevntx19_events_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.aevntx19_event_card_box {
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #d9dee7;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.aevntx19_event_image_wrap {
+  width: 100%;
+  height: 250px;
+  background-color: #edf2fa;
+}
+
+.aevntx19_event_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aevntx19_event_content_box {
+  padding: 18px;
+}
+
+.aevntx19_event_title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.aevntx19_event_subtitle {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #2f62ac;
+  font-weight: 500;
+}
+
+.aevntx19_event_desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #5f6f8f;
+}
+
+@media (max-width: 1200px) {
+  .aevntx19_events_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .aevntx19_page_shell {
+    padding: 34px 0 40px;
+  }
+
+  .aevntx19_inner_wrap {
+    padding: 0 18px;
+  }
+
+  .aevntx19_page_title {
+    font-size: 28px;
+  }
+
+  .aevntx19_page_subtitle {
+    font-size: 15px;
+  }
+
+  .aevntx19_events_grid {
+    gap: 18px;
+  }
+
+  .aevntx19_event_image_wrap {
+    height: 220px;
+  }
+
+  .aevntx19_event_content_box {
+    padding: 16px;
+  }
+
+  .aevntx19_event_title {
+    font-size: 17px;
+  }
+
+  .aevntx19_event_desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aevntx19_events_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aevntx19_page_title {
+    font-size: 24px;
+  }
+
+  .aevntx19_event_image_wrap {
+    height: 210px;
+  }
+}
