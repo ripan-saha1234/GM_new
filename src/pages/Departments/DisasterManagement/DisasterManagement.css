@@ -1,0 +1,90 @@
+.dstmx77_page_shell {
+  width: 100%;
+  padding: 44px 0;
+  background-color: #ffffff;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.dstmx77_inner_wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.dstmx77_banner_box {
+  display: grid;
+  grid-template-columns: 1.2fr 0.5fr;
+  gap: 20px;
+  border-radius: 24px;
+  background-color: #fff8f1;
+  border: 1px solid #f0dfc9;
+  padding: 28px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.dstmx77_kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #c76b00;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dstmx77_title {
+  margin: 0 0 12px;
+  font-size: 34px;
+  color: #0f172a;
+}
+
+.dstmx77_intro {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.8;
+}
+
+.dstmx77_banner_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  color: #ff8a00;
+}
+
+.dstmx77_steps_wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.dstmx77_step_card {
+  border: 1px solid #d9dee7;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.dstmx77_step_no {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #3568b2;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dstmx77_step_card p {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .dstmx77_banner_box,
+  .dstmx77_steps_wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .dstmx77_title {
+    font-size: 28px;
+  }
+}

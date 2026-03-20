@@ -1,7 +1,9 @@
 import React from "react";
 import "./ChairpersonMessage.css";
 import img from '../../../../public/about_pic3.svg'
+import { useNavigate } from "react-router-dom";
 const ChairpersonMessage = () => {
+    const navigate = useNavigate()
     return (
         <section className="chrmx42_message_section_shell">
             <div className="chrmx42_message_inner_wrap">
@@ -21,7 +23,7 @@ const ChairpersonMessage = () => {
                             actively participate in our development journey.
                         </p>
 
-                        <button className="chrmx42_message_btn">Read More</button>
+                        <button className="chrmx42_message_btn" onClick={(()=>navigate('/about'))}>Read More</button>
                     </div>
 
                     <div className="chrmx42_message_right_profile">

@@ -1,0 +1,70 @@
+.licmx44_page_shell {
+  width: 100%;
+  padding: 44px 0;
+  background-color: #ffffff;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.licmx44_inner_wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.licmx44_top_band {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3568b2;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 24px 26px;
+  margin-bottom: 24px;
+}
+
+.licmx44_title {
+  margin: 0;
+  font-size: 32px;
+}
+
+.licmx44_top_band i {
+  font-size: 38px;
+}
+
+.licmx44_content_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.licmx44_panel {
+  border: 1px solid #d9dee7;
+  border-radius: 18px;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.licmx44_panel h3 {
+  margin: 0 0 12px;
+  color: #0f172a;
+}
+
+.licmx44_panel p {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.8;
+}
+
+.licmx44_panel_highlight {
+  background-color: #f8fbff;
+}
+
+@media (max-width: 768px) {
+  .licmx44_content_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .licmx44_title {
+    font-size: 26px;
+  }
+}

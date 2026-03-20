@@ -4,6 +4,7 @@ import './AboutPage.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import ChairpersonMessage from '../Homepage/ChairpersonMessage/ChairpersonMessage';
 
 const AboutPage = () => {
   const { updatePageTitle, updateHeaderBackground } = usePageContext()
@@ -230,7 +231,10 @@ const AboutPage = () => {
     //     </Swiper>
     //   </div>
     // </div>
+
+
     <section className="gmhxp9_about_page_wrap uni_container">
+      <ChairpersonMessage />
       <div className="gmhxp9_about_container_main">
         <div className="gmhxp9_about_left_content">
           <h1 className="gmhxp9_about_main_title">
@@ -273,7 +277,7 @@ const AboutPage = () => {
             ))}
           </div>
 
-          
+
         </div>
 
         <div className="gmhxp9_about_right_cards">
@@ -365,10 +369,6 @@ const AboutPage = () => {
         </div>
       </section>
     </section>
-
-
-
-
   )
 }
 

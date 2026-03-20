@@ -1,0 +1,64 @@
+.sewdx99_page_shell {
+  width: 100%;
+  padding: 46px 0;
+  background-color: #ffffff;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.sewdx99_inner_wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sewdx99_title_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sewdx99_title {
+  margin: 0;
+  font-size: 34px;
+  color: #0f172a;
+}
+
+.sewdx99_title_row i {
+  font-size: 36px;
+  color: #3568b2;
+}
+
+.sewdx99_info_panel {
+  border: 1px solid #d9dee7;
+  border-radius: 24px;
+  padding: 26px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.sewdx99_intro {
+  margin: 0 0 20px;
+  color: #5f6f8f;
+  line-height: 1.8;
+}
+
+.sewdx99_badges_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sewdx99_badges_wrap span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background-color: #eef3fb;
+  color: #3568b2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .sewdx99_title {
+    font-size: 28px;
+  }
+}

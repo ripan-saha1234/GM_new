@@ -1,497 +1,441 @@
-/* CouncillorPage.css */
-
-/* ===================== PAGE WRAPPER ===================== */
-.councillor-page-wrapper {
-  min-height: 100vh;
-  /* background-color: #f4f6f9; */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* ===================== HEADER SECTION ===================== */
-.councillor-header-section {
-  background: linear-gradient(135deg, #3169b5 0%, #1e4a8a 100%);
-  min-height: 320px;
-  position: relative;
-  overflow: hidden;
-}
-
-.councillor-header-overlay {
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.councillor-header-content {
-  text-align: center;
-  padding: 40px 20px;
-  max-width: 800px;
-}
-
-.councillor-header-icon {
-  font-size: 48px;
-  color: #fff;
-  margin-bottom: 15px;
-  display: block;
-  opacity: 0.9;
-}
-
-.councillor-page-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  margin: 0 0 10px 0;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.councillor-page-subtitle {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0 0 20px 0;
-  line-height: 1.6;
-}
-
-.councillor-header-divider {
-  width: 60px;
-  height: 3px;
-  background-color: #fff;
-  margin: 0 auto 25px auto;
-  border-radius: 2px;
-}
-
-/* ===================== STATS ROW ===================== */
-.councillor-stats-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.councillor-stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.councillor-stat-icon {
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.councillor-stat-number {
-  font-size: 28px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.councillor-stat-label {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* ===================== FILTER / SEARCH BAR ===================== */
-.councillor-filter-bar {
-  background-color: #fff;
-  padding: 20px 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.councillor-filter-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.councillor-search-box {
-  position: relative;
+.govkx91_directory_page_shell {
   width: 100%;
-  max-width: 500px;
-}
-
-.councillor-search-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #3169b5;
-  font-size: 16px;
-}
-
-.councillor-search-input {
-  width: 100%;
-  padding: 12px 20px 12px 45px;
-  border: 2px solid #ddd;
-  border-radius: 50px;
-  font-size: 14px;
-  outline: none;
-  transition: all 0.3s ease;
-  background-color: #f9f9f9;
+  padding: 46px 0 54px;
+  background-color: #ffffff;
   box-sizing: border-box;
-  color: #333;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
-.councillor-search-input:focus {
-  border-color: #3169b5;
-  box-shadow: 0 0 0 3px rgba(49, 105, 181, 0.15);
+.govkx91_directory_inner_wrap {
+  width: 100%;
 }
 
-.councillor-search-input::placeholder {
-  color: #aaa;
+.govkx91_directory_heading_block {
+  margin-bottom: 30px;
 }
 
-/* ===================== CONTAINER & GRID ===================== */
-.councillor-container {
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  padding: 40px 0px;
+.govkx91_directory_kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #2f62ac;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-.councillor-cards-grid {
+.govkx91_directory_main_title {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.govkx91_directory_subtitle {
+  margin: 0;
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5f6f8f;
+}
+
+.govkx91_directory_cards_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
 }
 
-/* ===================== CARD ===================== */
-.councillor-card {
-  background-color: #fff;
-  border-radius: 12px;
+.govkx91_person_card_box {
+  background-color: #ffffff;
+  border: 1px solid #d9dee7;
+  border-radius: 18px;
   overflow: hidden;
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  border: 1px solid rgba(49, 105, 181, 0.1);
-  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.councillor-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 10px rgba(82, 147, 238, 0.18);
+.govkx91_person_card_box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
-.councillor-card:hover .councillor-image {
-  transform: scale(1.08);
-}
-
-/* ===================== WARD BADGE ===================== */
-.councillor-ward-badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #3169b5;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  z-index: 10;
-  /* box-shadow: 0 2px 8px rgba(49, 105, 181, 0.4); */
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.councillor-ward-badge i {
-  font-size: 11px;
-}
-
-/* ===================== IMAGE ===================== */
-.councillor-image-container {
+.govkx91_person_image_outer {
   width: 100%;
   height: 220px;
-  overflow: hidden;
-  position: relative;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  background: linear-gradient(180deg, #f1f6fd 0%, #e9f1fb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e4eaf2;
 }
 
-.councillor-image {
+.govkx91_person_image_tag {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+  object-fit: fill;
+  display: block;
+  border-radius: 16px;
+  background-color: #ffffff;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
-.councillor-image-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: linear-gradient(to top, rgba(49, 105, 181, 0.2), transparent);
+.govkx91_person_content_area {
+  padding: 22px 20px 20px;
 }
 
-/* ===================== CARD BODY ===================== */
-.councillor-card-body {
-  padding: 20px;
-}
-
-.councillor-name {
-  font-size: 18px;
+.govkx91_person_name_text {
+  margin: 0 0 12px;
+  font-size: 21px;
+  line-height: 1.35;
   font-weight: 700;
-  color: #2c3e50;
-  margin: 0 0 12px 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  line-height: 1.3;
+  color: #0f172a;
 }
 
-.councillor-name-icon {
-  color: #3169b5;
-  font-size: 16px;
-  flex-shrink: 0;
-}
-
-.councillor-divider {
-  height: 2px;
-  background: linear-gradient(to right, #3169b5, transparent);
-  margin-bottom: 15px;
-  border-radius: 1px;
-}
-
-/* ===================== INFO SECTION ===================== */
-.councillor-info-section {
+.govkx91_person_position_badge {
+  display: inline-block;
   margin-bottom: 18px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: #eef3fb;
+  color: #2f62ac;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 600;
 }
 
-.councillor-info-row {
+.govkx91_person_info_block {
+  border-top: 1px solid #e8edf4;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.govkx91_person_info_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.govkx91_person_info_label_wrap {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 10px;
+  min-width: 120px;
+}
+
+.govkx91_person_info_icon {
+  color: #2f62ac;
   font-size: 14px;
 }
 
-.councillor-info-icon {
-  color: #3169b5;
+.govkx91_person_info_label {
   font-size: 14px;
-  width: 18px;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.councillor-info-icon-muted {
-  color: #bbb;
-  font-size: 14px;
-  width: 18px;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.councillor-info-label {
-  color: #7f8c8d;
+  line-height: 1.4;
+  color: #64748b;
   font-weight: 500;
 }
 
-.councillor-info-value {
-  color: #2c3e50;
+.govkx91_person_info_value {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #0f172a;
   font-weight: 600;
 }
 
-.councillor-phone-link {
-  color: #3169b5;
-  font-weight: 600;
+.govkx91_person_phone_link {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #2f62ac;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 600;
 }
 
-.councillor-phone-link:hover {
-  color: #1e4a8a;
+.govkx91_person_phone_link:hover {
   text-decoration: underline;
 }
 
-.councillor-no-phone {
-  color: #bbb;
-  font-style: italic;
-  font-size: 13px;
-}
-
-/* ===================== ACTION BUTTONS ===================== */
-.councillor-action-buttons {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.councillor-call-btn {
-  flex: 1;
-  padding: 10px 16px;
-  background-color: #3169b5;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  box-shadow: 0 2px 6px rgba(49, 105, 181, 0.3);
-}
-
-.councillor-call-btn:hover {
-  background-color: #285694;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(49, 105, 181, 0.4);
-}
-
-.councillor-profile-btn {
-  flex: 1;
-  padding: 10px 16px;
-  background-color: #fff;
-  color: #3169b5;
-  border: 2px solid #3169b5;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
-.councillor-profile-btn:hover {
-  background-color: #3169b5;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(49, 105, 181, 0.3);
-}
-
-/* ===================== FOOTER NOTE ===================== */
-.councillor-footer-note {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  padding: 20px 30px;
-  background-color: #fff;
-  border-left: 4px solid #3169b5;
-  border-radius: 0 8px 8px 0;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-}
-
-.councillor-footer-icon {
-  color: #3169b5;
-  font-size: 20px;
-  margin-top: 2px;
-  flex-shrink: 0;
-}
-
-.councillor-footer-text {
-  color: #555;
+.govkx91_person_no_phone_text {
   font-size: 14px;
-  line-height: 1.6;
-  margin: 0;
+  line-height: 1.4;
+  color: #94a3b8;
+  font-weight: 500;
 }
 
-/* ===================== RESPONSIVE ===================== */
-@media screen and (max-width: 768px) {
-  .councillor-page-title {
-    font-size: 26px;
-  }
-
-  .councillor-page-subtitle {
-    font-size: 14px;
-  }
-
-  .councillor-header-icon {
-    font-size: 36px;
-  }
-
-  .councillor-stats-row {
-    gap: 25px;
-  }
-
-  .councillor-stat-number {
-    font-size: 22px;
-  }
-
-  .councillor-cards-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-  }
-
-  .councillor-container {
-    padding: 25px 15px;
-  }
-
-  .councillor-footer-note {
-    margin: 0 15px 30px 15px;
-    padding: 15px 20px;
+@media (max-width: 1100px) {
+  .govkx91_directory_cards_grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 480px) {
-  .councillor-page-title {
-    font-size: 22px;
+@media (max-width: 768px) {
+  .govkx91_directory_page_shell {
+    padding: 34px 0 40px;
   }
 
-  .councillor-header-section {
-    min-height: 280px;
+  .govkx91_directory_main_title {
+    font-size: 28px;
   }
 
-  .councillor-header-overlay {
-    min-height: 280px;
+  .govkx91_directory_subtitle {
+    font-size: 15px;
   }
 
-  .councillor-stats-row {
-    gap: 20px;
-  }
-
-  .councillor-stat-number {
-    font-size: 20px;
-  }
-
-  .councillor-stat-label {
-    font-size: 10px;
-  }
-
-  .councillor-cards-grid {
-    grid-template-columns: 1fr;
+  .govkx91_directory_cards_grid {
     gap: 18px;
   }
 
-  .councillor-action-buttons {
+  .govkx91_person_image_outer {
+    height: 200px;
+  }
+
+  .govkx91_person_name_text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+  .govkx91_directory_cards_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .govkx91_person_content_area {
+    padding: 18px 16px;
+  }
+
+  .govkx91_directory_main_title {
+    font-size: 24px;
+  }
+
+  .govkx91_person_image_outer {
+    height: 180px;
+  }
+
+  .govkx91_person_image_tag {
+    width: 130px;
+    height: 130px;
+  }
+
+  .govkx91_person_info_row {
     flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.exclx71_page_shell {
+  width: 100%;
+  padding: 48px 0 56px;
+  /* background-color: #ffffff; */
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.exclx71_inner_wrap {
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  padding: 0 0px !important;
+  box-sizing: border-box;
+}
+
+.exclx71_heading_block {
+  margin-bottom: 30px;
+}
+
+.exclx71_heading_kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #3568b2;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exclx71_main_title {
+  margin: 0 0 12px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.exclx71_main_subtitle {
+  margin: 0;
+  max-width: 860px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5f6f8f;
+}
+
+.exclx71_cards_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.exclx71_person_card {
+  border: 1px solid #d9dee7;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exclx71_person_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.exclx71_person_image_wrap {
+  width: 100%;
+  height: 280px;
+  background: linear-gradient(180deg, #f7f8fb 0%, #eef2f7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.exclx71_person_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  display: block;
+}
+
+.exclx71_person_content {
+  padding: 20px 18px 18px;
+}
+
+.exclx71_role_badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background-color: #eef3fb;
+  color: #3568b2;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.exclx71_person_name {
+  margin: 0 0 14px;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.exclx71_life_dates {
+  border-top: 1px solid #e6ebf2;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exclx71_date_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.exclx71_date_label {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.exclx71_date_value {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #0f172a;
+  font-weight: 600;
+  text-align: right;
+}
+
+.exclx71_note_box {
+  margin-top: 30px;
+  border: 1px solid #d9dee7;
+  background-color: #f8fbff;
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.exclx71_note_box i {
+  color: #3568b2;
+  margin-top: 2px;
+}
+
+.exclx71_note_box p {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .exclx71_cards_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .exclx71_cards_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .exclx71_page_shell {
+    padding: 34px 0 40px;
   }
 
-  .councillor-call-btn,
-  .councillor-profile-btn {
-    width: 100%;
+  .exclx71_inner_wrap {
+    padding: 0 18px;
   }
 
-  .councillor-search-input {
-    font-size: 13px;
+  .exclx71_main_title {
+    font-size: 28px;
   }
 
-  .councillor-name {
-    font-size: 16px;
+  .exclx71_main_subtitle {
+    font-size: 15px;
   }
 
-  .councillor-footer-note {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .exclx71_person_image_wrap {
+    height: 240px;
+  }
+
+  .exclx71_person_name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exclx71_cards_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exclx71_main_title {
+    font-size: 24px;
+  }
+
+  .exclx71_person_image_wrap {
+    height: 220px;
   }
 }

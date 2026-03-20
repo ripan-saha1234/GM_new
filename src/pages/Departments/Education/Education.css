@@ -1,0 +1,95 @@
+.eduxr22_page_shell {
+  width: 100%;
+  padding: 44px 0;
+  background-color: #ffffff;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.eduxr22_inner_wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.eduxr22_header_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.eduxr22_kicker {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #3568b2;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.eduxr22_title {
+  margin: 0;
+  font-size: 34px;
+  color: #0f172a;
+}
+
+.eduxr22_header_icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 20px;
+  background-color: #eef3fb;
+  color: #3568b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+}
+
+.eduxr22_intro_box {
+  border-left: 5px solid #3568b2;
+  background-color: #f8fbff;
+  padding: 18px 20px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.eduxr22_intro_box p {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.8;
+}
+
+.eduxr22_cards_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.eduxr22_info_card {
+  border: 1px solid #d9dee7;
+  border-radius: 18px;
+  padding: 22px;
+  background-color: #ffffff;
+}
+
+.eduxr22_info_card h3 {
+  margin: 0 0 10px;
+  color: #0f172a;
+}
+
+.eduxr22_info_card p {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .eduxr22_cards_row {
+    grid-template-columns: 1fr;
+  }
+
+  .eduxr22_title {
+    font-size: 28px;
+  }
+}

@@ -88,7 +88,9 @@ const Navbar = () => {
               <i class="fa-solid fa-angle-down"></i>
             </button>
             <div className="nav-dropdown">
-              <Link to="/councillors" onClick={closeMenu}>Counicllors</Link>
+              <Link to="/councillors" onClick={closeMenu}>Board of Counicllors</Link>
+              <Link to="/key-persons" onClick={closeMenu}>Other key Persons</Link>
+              <Link to="/historical-archive" onClick={closeMenu}>Historical Archive</Link>
               {/* <Link to="/notice-board/tenders" onClick={closeMenu}>Other key Person</Link> */}
               <Link to="/about" onClick={closeMenu}>About us</Link>
             </div>
@@ -107,7 +109,23 @@ const Navbar = () => {
             </button>
             <div className="nav-dropdown">
               <Link to="/departments/finance" onClick={closeMenu}>Finance</Link>
+              <Link to="/departments/accounts" onClick={closeMenu}>Accounts</Link>
+              <Link to="/departments/education" onClick={closeMenu}>Education</Link>
+              <Link to="/departments/law" onClick={closeMenu}>Law</Link>
 
+              <Link to="/departments/license" onClick={closeMenu}>License</Link>
+              <Link to="/departments/health" onClick={closeMenu}>Health</Link>
+              <Link to="/departments/lighting" onClick={closeMenu}>Lighting</Link>
+              <Link to="/departments/disaster-management" onClick={closeMenu}>Disaster Management</Link>
+
+              <Link to="/departments/roads" onClick={closeMenu}>Roads</Link>
+              <Link to="/departments/sewerage-drainage" onClick={closeMenu}>Sewerage Drainage</Link>
+              <Link to="/departments/water-supply" onClick={closeMenu}>Water Supply</Link>
+              <Link to="/departments/information-technologoy" onClick={closeMenu}>Information Technology</Link>
+
+              <Link to="/departments/parks-gardens" onClick={closeMenu}>Parks & Gardens</Link>
+              <Link to="/departments/planning-development" onClick={closeMenu}>Planning development</Link>
+             
             </div>
           </li>
 

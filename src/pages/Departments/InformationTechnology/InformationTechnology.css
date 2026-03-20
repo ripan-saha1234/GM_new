@@ -1,0 +1,68 @@
+.itdx22_page_shell {
+  width: 100%;
+  padding: 46px 0;
+  background-color: #ffffff;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.itdx22_inner_wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.itdx22_top_box {
+  display: grid;
+  grid-template-columns: 1.3fr 0.5fr;
+  gap: 20px;
+  border: 1px solid #d9dee7;
+  border-radius: 24px;
+  padding: 28px;
+  margin-bottom: 22px;
+}
+
+.itdx22_title {
+  margin: 0 0 12px;
+  font-size: 34px;
+  color: #0f172a;
+}
+
+.itdx22_intro {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.8;
+}
+
+.itdx22_top_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3568b2;
+  font-size: 70px;
+}
+
+.itdx22_feature_strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.itdx22_feature_strip div {
+  background-color: #eef3fb;
+  color: #3568b2;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .itdx22_top_box,
+  .itdx22_feature_strip {
+    grid-template-columns: 1fr;
+  }
+
+  .itdx22_title {
+    font-size: 28px;
+  }
+}

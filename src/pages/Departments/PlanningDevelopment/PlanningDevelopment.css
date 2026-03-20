@@ -1,0 +1,75 @@
+.plndx44_page_shell {
+  width: 100%;
+  padding: 46px 0;
+  background-color: #ffffff;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.plndx44_inner_wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.plndx44_title {
+  margin: 0 0 22px;
+  font-size: 34px;
+  color: #0f172a;
+}
+
+.plndx44_master_grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr 0.7fr;
+  gap: 18px;
+}
+
+.plndx44_large_card {
+  grid-row: span 2;
+  border: 1px solid #d9dee7;
+  border-radius: 24px;
+  padding: 28px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.plndx44_intro {
+  margin: 0;
+  color: #5f6f8f;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.plndx44_small_card {
+  border: 1px solid #d9dee7;
+  border-radius: 20px;
+  padding: 24px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ffffff;
+}
+
+.plndx44_small_card i {
+  color: #3568b2;
+  font-size: 30px;
+}
+
+.plndx44_small_card span {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .plndx44_master_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plndx44_large_card {
+    grid-row: auto;
+  }
+
+  .plndx44_title {
+    font-size: 28px;
+  }
+}

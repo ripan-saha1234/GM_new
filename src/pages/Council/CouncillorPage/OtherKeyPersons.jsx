@@ -1,141 +1,93 @@
-import React from 'react';
-import './CouncillorPage.css';
-import img from '../../../../public/about_pic1.svg'
+import React from "react";
+import "./CouncillorPage.css";
+import img from "../../../../public/about_pic1.svg";
+
 const councillorsData = [
     {
         id: 1,
         name: "Rajesh Kumar Singh",
-        wardNumber: 1,
         phone: "+91 98765 43210",
         image: img,
+        position: "Executive Officer",
     },
     {
         id: 2,
         name: "Sunita Devi Sharma",
-        wardNumber: 2,
         phone: "+91 98765 43211",
         image: img,
+        position: "Finance Officer",
     },
     {
         id: 3,
         name: "Amit Kumar Verma",
-        wardNumber: 3,
         phone: null,
         image: img,
+        position: "Health Officer",
     },
     {
         id: 4,
         name: "Priya Kumari Gupta",
-        wardNumber: 4,
         phone: "+91 98765 43213",
         image: img,
+        position: "Accountant",
     },
     {
         id: 5,
         name: "Manoj Kumar Yadav",
-        wardNumber: 5,
         phone: null,
         image: img,
+        position: "Sanitary Inspector",
     },
     {
         id: 6,
         name: "Kavita Devi Pandey",
-        wardNumber: 6,
         phone: "+91 98765 43215",
         image: img,
-    },
-    {
-        id: 7,
-        name: "Suresh Prasad Mishra",
-        wardNumber: 7,
-        phone: "+91 98765 43216",
-        image: img,
-    },
-    {
-        id: 8,
-        name: "Anita Kumari Jha",
-        wardNumber: 8,
-        phone: "+91 98765 43217",
-        image: img,
-    },
-    {
-        id: 9,
-        name: "Deepak Kumar Thakur",
-        wardNumber: 9,
-        phone: null,
-        image: img,
-    },
-    {
-        id: 10,
-        name: "Rekha Devi Chaudhary",
-        wardNumber: 10,
-        phone: "+91 98765 43219",
-        image: img,
-    },
-    {
-        id: 11,
-        name: "Vikram Singh Rajput",
-        wardNumber: 11,
-        phone: "+91 98765 43220",
-        image: img,
-    },
-    {
-        id: 12,
-        name: "Meena Kumari Sahu",
-        wardNumber: 12,
-        phone: null,
-        image: img,
+        position: "Engineer - AMRUT",
     },
 ];
 
-const CouncillorCard = ({ councillor }) => {
+const KeyPersonCard = ({ person }) => {
     return (
-        <div className="councillor-card">
-            <div className="councillor-ward-badge">
-                <i className="fas fa-map-marker-alt"></i>
-                Ward {councillor.wardNumber}
-            </div>
-
-            <div className="councillor-image-container">
+        <div className="govkx91_person_card_box">
+            <div className="govkx91_person_image_outer">
                 <img
-                    src={councillor.image}
-                    alt={councillor.name}
-                    className="councillor-image"
+                    src={person.image}
+                    alt={person.name}
+                    className="govkx91_person_image_tag"
                     onError={(e) => {
-                        e.target.src = "https://via.placeholder.com/150x150?text=No+Image";
+                        e.target.src = "https://via.placeholder.com/160x160?text=No+Image";
                     }}
                 />
             </div>
 
-            <div className="councillor-card-body">
-                <h3 className="councillor-name">
-                    <i className="fas fa-user councillor-name-icon"></i>
-                    {councillor.name}
-                </h3>
+            <div className="govkx91_person_content_area">
+                <h3 className="govkx91_person_name_text">{person.name}</h3>
 
-                <div className="councillor-divider"></div>
+                <div className="govkx91_person_position_badge">{person.position}</div>
 
-                <div className="councillor-info-section">
-                    <div className="councillor-info-row">
-                        <i className="fas fa-landmark councillor-info-icon"></i>
-                        <span className="councillor-info-label">Ward Number:</span>
-                        <span className="councillor-info-value">{councillor.wardNumber}</span>
-                    </div>
+                <div className="govkx91_person_info_block">
+                
 
-                    {councillor.phone ? (
-                        <div className="councillor-info-row">
-                            <i className="fas fa-phone-alt councillor-info-icon"></i>
-                            <span className="councillor-info-label">Phone:</span>
-                            <a href={`tel:${councillor.phone}`} className="councillor-phone-link">
-                                {councillor.phone}
+                    <div className="govkx91_person_info_row">
+                        <div className="govkx91_person_info_label_wrap">
+                            <i className="fa-solid fa-phone govkx91_person_info_icon"></i>
+                            <span className="govkx91_person_info_label">Contact</span>
+                        </div>
+
+                        {person.phone ? (
+                            <a
+                                href={`tel:${person.phone}`}
+                                className="govkx91_person_phone_link"
+                            >
+                                {person.phone}
                             </a>
-                        </div>
-                    ) : (
-                        <div className="councillor-info-row">
-                            <i className="fas fa-phone-slash councillor-info-icon-muted"></i>
-                            <span className="councillor-no-phone">Phone not available</span>
-                        </div>
-                    )}
+                        ) : (
+                            <span className="govkx91_person_no_phone_text">
+                                Not Available
+                            </span>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,33 +95,25 @@ const CouncillorCard = ({ councillor }) => {
 };
 
 const OtherKeyPersons = () => {
-    const totalCouncillors = councillorsData.length;
-    const totalWithPhone = councillorsData.filter((c) => c.phone).length;
-
     return (
-        <>
-            <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            />
-
-            <div className="councillor-page-wrapper">
-
-        
-               
-
-                {/* Cards Grid */}
-                <div className="councillor-container uni_container">
-                    <div className="councillor-cards-grid">
-                        {councillorsData.map((councillor) => (
-                            <CouncillorCard key={councillor.id} councillor={councillor} />
-                        ))}
-                    </div>
+        <section className="govkx91_directory_page_shell">
+            <div className="govkx91_directory_inner_wrap uni_container">
+                <div className="govkx91_directory_heading_block">
+                    <span className="govkx91_directory_kicker">Municipal Directory</span>
+                    <h2 className="govkx91_directory_main_title">Other Key Persons</h2>
+                    <p className="govkx91_directory_subtitle">
+                        Important administrative officials and responsible officers serving
+                        Gobardanga Municipality.
+                    </p>
                 </div>
 
-        
+                <div className="govkx91_directory_cards_grid">
+                    {councillorsData.map((person) => (
+                        <KeyPersonCard key={person.id} person={person} />
+                    ))}
+                </div>
             </div>
-        </>
+        </section>
     );
 };
 

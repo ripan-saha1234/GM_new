@@ -26,7 +26,7 @@ const Footer = () => {
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/finance">Finance</Link></li>
+            <li><Link to="/departments/finance">Finance</Link></li>
             <li><Link to="/councillors">Councillors</Link></li>
           </ul>
         </div>
@@ -34,12 +34,12 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
-            <li><Link to="/grievance">Submit Grievance</Link></li>
-            <li><Link to="/feedback">Feedback</Link></li>
-            <li><Link to="/newsletter">e‑Newsletter</Link></li>
+            <li><Link to="/contact">Submit Grievance</Link></li>
+            <li><Link to="/contact">Feedback</Link></li>
+            {/* <li><Link to="/newsletter">e‑Newsletter</Link></li> */}
             <li><Link to="/notice-board">Notice Board</Link></li>
             <li><Link to="/tourism">Tourist Attractions</Link></li>
-            <li><Link to="/service-rates">Service Rates</Link></li>
+            <li><Link to="/services">Service Rates</Link></li>
           </ul>
         </div>
 

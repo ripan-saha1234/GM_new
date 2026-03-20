@@ -147,9 +147,12 @@
 .gmhxp9_about_page_wrap {
   width: 100%;
   /* background-color: #ffffff; */
-  padding: 40px 0 50px;
+  padding: 80px 0 50px;
   box-sizing: border-box;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
 .gmhxp9_about_container_main {
@@ -161,6 +164,7 @@
   gap: 56px;
   align-items: flex-start;
   box-sizing: border-box;
+  
 }
 
 .gmhxp9_about_left_content {
