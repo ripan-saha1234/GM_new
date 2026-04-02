@@ -1,4 +1,4 @@
-.srvcrd58_services_section_shell {
+﻿.srvcrd58_services_section_shell {
   width: 100%;
   padding: 48px 0 54px;
   box-sizing: border-box;
@@ -28,7 +28,7 @@
 }
 
 .srvcrd58_services_view_link {
-  color: #2f62ac;
+  color: #02019C;
   text-decoration: none;
   font-size: 15px;
   line-height: 1.2;
@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2f62ac;
+  color: #02019C;
   font-size: 24px;
   margin-bottom: 16px;
 }

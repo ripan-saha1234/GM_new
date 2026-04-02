@@ -158,6 +158,22 @@ const Navbar = () => {
           <li>
             <Link to="/projects" onClick={closeMenu}>Projects</Link>
           </li>
+          <li className={`nav-item-dropdown ${openDropdown === 'tenders' ? 'open' : ''}`}>
+            <button
+              type="button"
+              className="nav-dropdown-trigger"
+              onClick={() => toggleDropdown('tenders')}
+              aria-expanded={openDropdown === 'tenders'}
+              aria-haspopup="true"
+            >
+              Tenders
+              <i className="fa-solid fa-angle-down"></i>
+            </button>
+            <div className="nav-dropdown">
+              <Link to="/current-tenders" onClick={closeMenu}>Current Tenders</Link>
+              <Link to="/archived-tenders" onClick={closeMenu}>Archived Tenders</Link>
+            </div>
+          </li>
           <li>
             <Link to="/gallery" onClick={closeMenu}>Gallery</Link>
           </li>

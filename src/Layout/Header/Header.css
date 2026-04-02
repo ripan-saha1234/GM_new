@@ -1,7 +1,7 @@
 /* HERO SECTION */
 
 .hero-section{
-  height: 540px;
+  height: 625px;
   position: relative;
   background-position:center;
   background-size:cover;
@@ -86,7 +86,7 @@
   margin-top:-32px;
   display:flex;
   align-items:center;
-  background: #3061a6;
+  background: #02019C;
   color:#fff;
   height:56px;
   box-shadow:0 10px 30px rgba(0,0,0,0.18);
@@ -135,8 +135,8 @@
 /* inner pages */
 
 .hero-inner{
-  background-color:#3061a6;
-  height:220px;
+  background-color:#02019C;
+  height:320px;
 }
 
 .hero-inner-overlay{
@@ -144,7 +144,7 @@
   left:0;
   right:0;
   bottom:0;
-  padding:46px 0 38px;
+  padding:66px 0 80px;
   color:#fff;
 }
 

@@ -1,4 +1,4 @@
-.contact-section {
+﻿.contact-section {
     display: flex;
     gap: 20px;
     padding: 6rem;
@@ -331,8 +331,8 @@
 }
 
 .psupx81_support_tab_btn_active {
-  background-color: #3568b2;
-  border-color: #3568b2;
+  background-color: #02019C;
+  border-color: #02019C;
   color: #ffffff;
   font-weight: 500;
 }
@@ -399,7 +399,7 @@
 .psupx81_support_input:focus,
 .psupx81_support_textarea:focus,
 .psupx81_support_select:focus {
-  border-color: #3568b2;
+  border-color: #02019C;
 }
 
 .psupx81_support_textarea {
@@ -414,7 +414,7 @@
 
 .psupx81_support_submit_btn {
     border: none;
-    background-color: #3568b2;
+    background-color: #02019C;
     color: #ffffff;
     padding: 14px 18px !important;
     border-radius: 8px;
@@ -431,7 +431,7 @@
 }
 
 .psupx81_support_submit_btn:hover {
-  background-color: #2d5a9a;
+  background-color: #020075;
 }
 
 .psupx81_support_map_card {

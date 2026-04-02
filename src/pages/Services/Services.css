@@ -1,4 +1,4 @@
-.services-page {
+﻿.services-page {
   padding: 6rem 7rem;
   background: #fafafa;
 }
@@ -74,8 +74,8 @@
 }
 
 .srvqx71_service_tab_btn_active {
-  background-color: #3568b2;
-  border-color: #3568b2;
+  background-color: #02019C;
+  border-color: #02019C;
   color: #ffffff;
   font-weight: 500;
 }
@@ -93,7 +93,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 22px;
-  color: #2f62ac;
+  color: #02019C;
 }
 
 .srvqx71_section_heading_row i {
@@ -217,7 +217,7 @@
   margin: 0;
   font-size: 15px;
   line-height: 1.5;
-  color: #2f62ac;
+  color: #02019C;
   font-weight: 500;
 }
 

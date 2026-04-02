@@ -1,4 +1,4 @@
-.ntcbx92_notice_page_shell {
+﻿.ntcbx92_notice_page_shell {
   width: 100%;
   /* background-color: #ffffff; */
   padding: 28px 0 46px;
@@ -39,8 +39,8 @@
 }
 
 .ntcbx92_notice_tab_btn_active {
-  background-color: #3568b2;
-  border-color: #3568b2;
+  background-color: #02019C;
+  border-color: #02019C;
   color: #ffffff;
   font-weight: 600;
 }
@@ -82,7 +82,7 @@
 
 .ntcbx92_notice_file_icon {
 
-  color: #2d63af;
+  color: #02019C;
   font-size: 14px;
   display: flex;
   align-items: flex-start;
@@ -121,7 +121,7 @@
 .ntcbx92_notice_download_btn {
     border: none;
     background-color: #eef4fd;
-    color: #2d63af;
+    color: #02019C;
     padding: 8px 13px;
     border-radius: 14px;
     display: inline-flex

@@ -1,4 +1,4 @@
-.sewdx99_page_shell {
+﻿.sewdx99_page_shell {
   width: 100%;
   padding: 46px 0;
   background-color: #ffffff;
@@ -26,7 +26,7 @@
 
 .sewdx99_title_row i {
   font-size: 36px;
-  color: #3568b2;
+  color: #02019C;
 }
 
 .sewdx99_info_panel {
@@ -52,7 +52,7 @@
   padding: 10px 14px;
   border-radius: 999px;
   background-color: #eef3fb;
-  color: #3568b2;
+  color: #02019C;
   font-size: 14px;
   font-weight: 600;
 }

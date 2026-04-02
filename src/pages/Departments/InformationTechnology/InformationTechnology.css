@@ -1,4 +1,4 @@
-.itdx22_page_shell {
+﻿.itdx22_page_shell {
   width: 100%;
   padding: 46px 0;
   background-color: #ffffff;
@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #3568b2;
+  color: #02019C;
   font-size: 70px;
 }
 
@@ -49,7 +49,7 @@
 
 .itdx22_feature_strip div {
   background-color: #eef3fb;
-  color: #3568b2;
+  color: #02019C;
   border-radius: 14px;
   padding: 14px;
   text-align: center;

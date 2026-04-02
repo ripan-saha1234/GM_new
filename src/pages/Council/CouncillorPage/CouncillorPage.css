@@ -1,4 +1,4 @@
-.govkx91_directory_page_shell {
+﻿.govkx91_directory_page_shell {
   width: 100%;
   padding: 46px 0 54px;
   background-color: #ffffff;
@@ -17,7 +17,7 @@
 .govkx91_directory_kicker {
   display: inline-block;
   margin-bottom: 10px;
-  color: #2f62ac;
+  color: #02019C;
   font-size: 14px;
   line-height: 1;
   font-weight: 700;
@@ -101,7 +101,7 @@
   padding: 8px 12px;
   border-radius: 999px;
   background-color: #eef3fb;
-  color: #2f62ac;
+  color: #02019C;
   font-size: 13px;
   line-height: 1;
   font-weight: 600;
@@ -130,7 +130,7 @@
 }
 
 .govkx91_person_info_icon {
-  color: #2f62ac;
+  color: #02019C;
   font-size: 14px;
 }
 
@@ -151,7 +151,7 @@
 .govkx91_person_phone_link {
   font-size: 14px;
   line-height: 1.4;
-  color: #2f62ac;
+  color: #02019C;
   text-decoration: none;
   font-weight: 600;
 }
@@ -248,7 +248,7 @@
 .exclx71_heading_kicker {
   display: inline-block;
   margin-bottom: 10px;
-  color: #3568b2;
+  color: #02019C;
   font-size: 14px;
   line-height: 1;
   font-weight: 700;
@@ -320,7 +320,7 @@
   padding: 8px 12px;
   border-radius: 999px;
   background-color: #eef3fb;
-  color: #3568b2;
+  color: #02019C;
   font-size: 12px;
   line-height: 1;
   font-weight: 700;
@@ -377,7 +377,7 @@
 }
 
 .exclx71_note_box i {
-  color: #3568b2;
+  color: #02019C;
   margin-top: 2px;
 }
 

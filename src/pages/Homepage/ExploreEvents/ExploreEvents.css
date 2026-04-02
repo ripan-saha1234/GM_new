@@ -1,4 +1,4 @@
-.evntsx73_section_shell {
+﻿.evntsx73_section_shell {
   width: 100%;
   padding: 54px 0 48px;
   box-sizing: border-box;
@@ -30,7 +30,7 @@
 .evntsx73_view_all_btn {
   min-width: 100px;
   text-align: center;
-  background-color: #3568b2;
+  background-color: #02019C;
   color: #ffffff;
   text-decoration: none;
   padding: 14px 24px;
@@ -42,7 +42,7 @@
 }
 
 .evntsx73_view_all_btn:hover {
-  background-color: #2d5a9a;
+  background-color: #020075;
 }
 
 .evntsx73_cards_grid {

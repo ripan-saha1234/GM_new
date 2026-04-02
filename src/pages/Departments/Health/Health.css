@@ -1,4 +1,4 @@
-.hlthx55_page_shell {
+﻿.hlthx55_page_shell {
   width: 100%;
   padding: 46px 0;
   background-color: #ffffff;
@@ -26,13 +26,13 @@
   align-items: center;
   justify-content: center;
   font-size: 90px;
-  color: #3568b2;
+  color: #02019C;
 }
 
 .hlthx55_kicker {
   display: inline-block;
   margin-bottom: 10px;
-  color: #3568b2;
+  color: #02019C;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;

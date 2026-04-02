@@ -1,4 +1,4 @@
-.lawqx33_page_shell {
+﻿.lawqx33_page_shell {
   width: 100%;
   padding: 42px 0;
   background-color: #ffffff;
@@ -53,7 +53,7 @@
 }
 
 .lawqx33_list_item i {
-  color: #3568b2;
+  color: #02019C;
 }
 
 .lawqx33_right_col {
@@ -73,7 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #3568b2;
+  color: #02019C;
   font-size: 52px;
 }
 

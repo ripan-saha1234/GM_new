@@ -1,4 +1,4 @@
-.projects-page {
+﻿.projects-page {
   padding: 6rem;
 }
 
@@ -42,7 +42,7 @@
 .prjmx47_projects_tab_btn {
   border: 1px solid #d6dce7;
   background-color: #ffffff;
-  color: #36507d;
+  color: #02019C;
   padding: 10px 16px;
   border-radius: 999px;
   font-size: 14px;
@@ -58,8 +58,8 @@
 }
 
 .prjmx47_projects_tab_btn_active {
-  background-color: #2f62ac;
-  border-color: #2f62ac;
+  background-color: #02019C;
+  border-color: #02019C;
   color: #ffffff;
 }
 
@@ -98,7 +98,7 @@
   height: 48px;
   border-radius: 14px;
   background-color: #eef3fb;
-  color: #2f62ac;
+  color: #02019C;
   display: flex;
   align-items: center;
   justify-content: center;

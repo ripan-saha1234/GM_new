@@ -1,4 +1,4 @@
-.trvplx66_section_shell {
+﻿.trvplx66_section_shell {
   width: 100%;
   /* background-color: #ffffff; */
   padding: 56px 0 0px;
@@ -33,7 +33,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #3568b2;
+  color: #02019C;
 }
 
 .trvplx66_main_title {
@@ -56,7 +56,7 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  background-color: #3568b2;
+  background-color: #02019C;
   color: #ffffff;
   padding: 14px 22px;
   border-radius: 999px;
@@ -68,7 +68,7 @@
 }
 
 .trvplx66_view_all_btn:hover {
-  background-color: #2d5a9a;
+  background-color: #020075;
 }
 
 .trvplx66_swiper_main {
@@ -132,7 +132,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #3568b2;
+  color: #02019C;
   font-size: 14px;
   line-height: 1.4;
   font-weight: 500;

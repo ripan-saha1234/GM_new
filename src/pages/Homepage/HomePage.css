@@ -1,4 +1,4 @@
-.home-page-container {
+﻿.home-page-container {
   padding: 6rem 0rem;
 }
 .home-welcome {
@@ -10,7 +10,7 @@
 }
 
 .home-welcome__heading {
-  color: #3061a6;
+  color: #02019C;
   font-size: 48px;
   font-weight: 700;
   /* margin: 0 0 1.5rem 0; */
@@ -34,7 +34,7 @@
 }
 
 .home-welcome__btn {
-  background-color: #3061a6;
+  background-color: #02019C;
   color: white;
   border: none;
   padding: 12px;
@@ -139,7 +139,7 @@
 }
 
 .read-more-btn {
-  background: #2f62ac;
+  background: #02019C;
   color: #FFFFFF;
   border: none;
   padding: 12px;

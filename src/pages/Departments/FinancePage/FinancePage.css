@@ -1,4 +1,4 @@
-.fncxr54_finance_page_shell {
+﻿.fncxr54_finance_page_shell {
   width: 100%;
   /* background-color: #ffffff; */
   padding: 46px 0 52px;
@@ -47,8 +47,8 @@
 }
 
 .fncxr54_finance_tab_btn_active {
-  background-color: #3568b2;
-  border-color: #3568b2;
+  background-color: #02019C;
+  border-color: #02019C;
   color: #ffffff;
   font-weight: 500;
 }
@@ -97,7 +97,7 @@
 }
 
 .fncxr54_finance_file_left i {
-  color: #2f62ac;
+  color: #02019C;
   font-size: 16px;
   flex-shrink: 0;
 }
@@ -112,7 +112,7 @@
 .fncxr54_finance_pdf_btn {
   border: none;
   background-color: #eef4fd;
-  color: #2f62ac;
+  color: #02019C;
   padding: 8px 12px !important;
   border-radius: 14px;
   display: inline-flex;

@@ -35,13 +35,13 @@
 .glance-value {
   font-size: 28px;
   font-weight: 600;
-  color: #3061a6;
+  color: #02019C;
   margin-bottom: 4px;
 }
 
 .glance-label {
   font-size: 14px;
-  color: #3061a6;
+  color: #02019C;
 }
 
 @media (max-width: 992px) {
