@@ -235,6 +235,7 @@ const AboutPage = () => {
 
     <section className="gmhxp9_about_page_wrap uni_container">
       <ChairpersonMessage />
+      
       <div className="gmhxp9_about_container_main">
         <div className="gmhxp9_about_left_content">
           <h1 className="gmhxp9_about_main_title">
